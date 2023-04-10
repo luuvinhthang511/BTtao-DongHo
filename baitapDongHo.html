@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaitapDH</title>
+    <style>
+        *{
+            margin: o;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(73, 98, 199);
+            background: linear-gradient(to right, #3e5060, #b14f2c);
+        }
+        #clock h3{
+            position: relative;
+            display:block;
+            color:#cbbbbb;
+            text-align: center;
+            margin:20px 0;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+        }
+        #clock #time {
+            display: flex;
+        }
+        #clock #time div {
+            position: relative;
+            margin: 0 10px;
+        }
+        #clock #time div span {
+            position: relative;
+            display: block;
+            width: 100Px;
+            height: 70px;
+            background-color: rgb(53, 121, 215);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+        #clock #time span:nth-child(2){
+            height: 50px;
+            background-color: #236cac;
+            text-transform: uppercase;
+            font-size: 20px;
+            letter-spacing: 3px;
+        }
+        #clock #time div:last-child span{
+            background-color:rgb(223, 14, 146) ;
+        }
+        #clock #time div:last-child span:nth-child(2){
+            background-color: rgb(181, 24, 131);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="clock">
+        <h3>Thời gian bây giờ là:</h3>
+        <div id = time>
+            <div>
+                <span id="gio">00</span><span>Giờ</span>
+            </div>
+            <div>
+                  <span id="phut">00</span><span>Phút</span>
+            </div>
+            <div>
+                <span id="giay">00</span><span>Giây</span>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="btDH.js"></script>
+</body>
+</html>
